@@ -1,20 +1,31 @@
-# KeyGuard
+# SKUD Server
 
-To start your Phoenix server:
+### Для запуска Phoenix сервера необходимо:
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
+  * Установить зависимости выполнив: `mix deps.get`
+  * Создать и выполнить миграции в базу данных: `mix ecto.create && mix ecto.migrate`
+  * Установить Node.js зависимости выполнив: `cd assets && npm install`
+  * Запустить сервер с помощью команды: `mix phx.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Теперь сервер запущен и доступен по адресу [`localhost:4000`](http://localhost:4000).
 
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+---
 
-## Learn more
+### Создание администратора
 
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+Для создания администратора необходимо запустить консоль elixir с помощью команды: `iex -S mix`
+
+Далее выполнить две команды:`alias KeyGuard.repo` и `alias KeyGuard.Admin.User`
+
+Добавляем администратора выполнив следующую команду:
+`Repo.insert(%User{username: "<Имя пользователя>", token: "<Токен авторизации>", role: 2, hahsed_password: Comeonin.Bcrypt.hashpwsalt("<Пароль пользователя>")}) `
+
+---
+
+### Тестирование приложения
+
+Для запуска unit-тестов запустите команду: `mix test`
+
+---
+
+СКУД "Выдача ключей" 2018г.ы
