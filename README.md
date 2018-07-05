@@ -1,6 +1,6 @@
 # SKUD Server
 
-> Elixir + Phoenix framework | сервер СКУД "Выдача ключей"
+> Elixir + Phoenix framework | Cервер СКУД "Выдача ключей"
 
 ### Для запуска Phoenix сервера необходимо:
 
