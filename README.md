@@ -1,5 +1,7 @@
 # SKUD Server
 
+> Elixir + Phoenix framework | сервер СКУД "Выдача ключей"
+
 ### Для запуска Phoenix сервера необходимо:
 
   * Установить зависимости выполнив: `mix deps.get`
