@@ -20,7 +20,7 @@
 Далее выполнить две команды:`alias KeyGuard.repo` и `alias KeyGuard.Admin.User`
 
 Добавляем администратора выполнив следующую команду:
-`Repo.insert(%User{username: "<Имя пользователя>", token: "<Токен авторизации>", role: 2, hahsed_password: Comeonin.Bcrypt.hashpwsalt("<Пароль пользователя>")}) `
+`Repo.insert(%User{username: "<Имя пользователя>", token: "<Токен авторизации>", role: 2, hashed_password: Comeonin.Bcrypt.hashpwsalt("<Пароль пользователя>")}) `
 
 ---
 
